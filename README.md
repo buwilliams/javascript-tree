@@ -5,8 +5,8 @@
 - Traverse in any direction (up or down)
 - Flat JSON structure which is easy to `grok` and alter.
 - Straight-forward API for data structure
-- Takes the pain out of managing nested JSON 
-- Fast!!!
+- Takes the pain out of managing nested JSON
+- Fast!!! (and can be improved!)
 
 ## Tree API
 
