@@ -1,6 +1,6 @@
 # JavaScript Tree
 
-WIP - A implementation of a doubly-linked list in JavaScript.
+A implementation of a doubly-linked list in JavaScript. It's been used in a production system for over 18 months as of writing. I'm working on making it more generic for public use. Feel free to make contributions.
 
 ## Benefits
 
