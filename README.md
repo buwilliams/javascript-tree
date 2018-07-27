@@ -7,7 +7,7 @@ A implementation of a doubly-linked list in JavaScript.
 - Handles deeply nested structures, ie. representing File Systems
 - Traverse in any direction (up or down)
 - Flat JSON structure which is easy to `grok` and alter.
-- Straight-forward API for data structure
+- Straight-forward API for developer happiness
 - Takes the pain out of managing nested JSON
 - Fast!!! (and can be improved!)
 
