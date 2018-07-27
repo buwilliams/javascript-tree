@@ -1,6 +1,6 @@
 # JavaScript Tree
 
-A implementation of a doubly-linked list in JavaScript. It's been used in a production system for over 18 months as of writing. I'm working on making it more generic for public use. So, for now, it's a work in progress. Feel free to make contributions.
+An implementation of a doubly-linked list in JavaScript. It's been used in a production system for over 18 months as of writing. I'm working on making it more generic for public use. So, for now, it's a work in progress. Feel free to make contributions.
 
 ## Benefits
 
