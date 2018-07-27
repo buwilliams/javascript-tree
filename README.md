@@ -2,23 +2,23 @@
 
 ## tree.js API
 
-- `hasChild (node)`
-- `hasNext (node)`
-- `traverse (tree, startingNodeId, fn)`
-- `get (tree, id)`
-- `parent (tree, id)`
-- `child (tree, id)`
-- `next (tree, id)`
-- `previous (tree, id)`
-- `hasChildDescendant (tree, parentId, childId)`
-- `getTemplate (tree)`
-- `createNode (tree, toId)`
-- `cloneNode (tree, cloneId)`
-- `deleteNode (tree, id)`
-- `addNext (tree, toId, id)`
-- `addChild (tree, toId, id)`
-- `removeFromTree (tree, id)`
-- `moveNode (tree, fromId, toId, shouldBeChild)`
+- `hasChild(node)`
+- `hasNext(node)`
+- `traverse(tree, startingNodeId, fn)`
+- `get(tree, id)`
+- `parent(tree, id)`
+- `child(tree, id)`
+- `next(tree, id)`
+- `previous(tree, id)`
+- `hasChildDescendant(tree, parentId, childId)`
+- `getTemplate(tree)`
+- `createNode(tree, toId)`
+- `cloneNode(tree, cloneId)`
+- `deleteNode(tree, id)`
+- `addNext(tree, toId, id)`
+- `addChild(tree, toId, id)`
+- `removeFromTree(tree, id)`
+- `moveNode(tree, fromId, toId, shouldBeChild)`
 
 ## Data Structure (doubly-linked list)
 
