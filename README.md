@@ -4,6 +4,7 @@ A implementation of a doubly-linked list in JavaScript.
 
 ## Benefits
 
+- Handles deeply nested structures, ie. representing File Systems
 - Traverse in any direction (up or down)
 - Flat JSON structure which is easy to `grok` and alter.
 - Straight-forward API for data structure
