@@ -13,21 +13,21 @@ A implementation of a doubly-linked list in JavaScript.
 
 ## Tree API
 
-- `hasChild(node)`
-- `hasNext(node)`
 - `traverse(tree, startingNodeId, fn)`
 - `get(tree, id)`
+- `hasChild(node)`
+- `hasChildDescendant(tree, parentId, childId)`
+- `hasNext(node)`
 - `parent(tree, id)`
 - `child(tree, id)`
 - `next(tree, id)`
 - `previous(tree, id)`
-- `hasChildDescendant(tree, parentId, childId)`
 - `getTemplate(tree)`
 - `createNode(tree, toId)`
-- `cloneNode(tree, cloneId)`
-- `deleteNode(tree, id)`
 - `addNext(tree, toId, id)`
 - `addChild(tree, toId, id)`
+- `cloneNode(tree, cloneId)`
+- `deleteNode(tree, id)`
 - `removeFromTree(tree, id)`
 - `moveNode(tree, fromId, toId, shouldBeChild)`
 
