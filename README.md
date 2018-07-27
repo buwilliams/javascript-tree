@@ -1,6 +1,6 @@
 # JavaScript Tree
 
-A implementation of a doubly-linked list in JavaScript.
+WIP - A implementation of a doubly-linked list in JavaScript.
 
 ## Benefits
 
