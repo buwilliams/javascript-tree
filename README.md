@@ -1,6 +1,14 @@
 # JavaScript Tree
 
-## tree.js API
+## Benefits
+
+- Traverse up or down
+- Flat JSON structure which is easy to `grok` and alter.
+- Straight-forward API to make any changes
+- Takes the pain out of moving memory pointers around
+- Fast!!!
+
+## Tree API
 
 - `hasChild(node)`
 - `hasNext(node)`
