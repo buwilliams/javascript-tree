@@ -1,1 +1,1 @@
-# javascript-tree
+# JavaScript Tree
