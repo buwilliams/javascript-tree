@@ -2,10 +2,10 @@
 
 ## Benefits
 
-- Traverse up or down
+- Traverse in any direction (up or down)
 - Flat JSON structure which is easy to `grok` and alter.
-- Straight-forward API to make any changes
-- Takes the pain out of moving memory pointers around
+- Straight-forward API for data structure
+- Takes the pain out of managing nested JSON 
 - Fast!!!
 
 ## Tree API
