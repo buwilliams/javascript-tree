@@ -1,5 +1,7 @@
 # JavaScript Tree
 
+A implementation of a doubly-linked list in JavaScript.
+
 ## Benefits
 
 - Traverse in any direction (up or down)
