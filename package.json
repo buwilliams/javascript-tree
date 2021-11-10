@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "http-server": "^14.0.0",
+    "jest": "^27.3.1"
+  }
+}

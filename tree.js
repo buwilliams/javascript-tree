@@ -1,22 +1,48 @@
-var Tree = {
-  hasChild: function(node) {
-    return _.isNil(node.child) ? false : true;
+const Tree = {
+  createTree() {
+    return {
+      rootId: null,
+      nextId: 1,
+      nodes: {}
+    };
   },
 
-  hasNext: function(node) {
-    return _.isNil(node.next) ? false : true;
+  createRoot(tree, attributes) {
+    let newTree = {
+      ...tree,
+      rootId: '1',
+      nextId: 2
+    };
+
+    newTree.nodes['1'] = {
+      parent: null,
+      child: null,
+      next: null,
+      prev: null,
+      ...attributes
+    }
+
+    return newTree;
   },
 
-  traverse: function(tree, startingNodeId, fn) {
-    if(_.isNil(tree.nodes[startingNodeId])) return;
+  hasChild(node) {
+    return this._isNil(node.child) ? false : true;
+  },
+
+  hasNext(node) {
+    return this._isNil(node.next) ? false : true;
+  },
+
+  traverse(tree, startingNodeId, fn) {
+    if(this._isNil(tree.nodes[startingNodeId])) return;
     var node = tree.nodes[startingNodeId];
     fn(tree, node);
     if(this.hasChild(node))
       this._traverse(tree, node.child, fn);
   },
 
-  _traverse: function(tree, nodeId, fn) {
-    if(_.isNil(tree.nodes[nodeId])) return; // base case
+  _traverse(tree, nodeId, fn) {
+    if(this._isNil(tree.nodes[nodeId])) return; // base case
     var node = tree.nodes[nodeId];
     fn(tree, node);
     if(this.hasChild(node))
@@ -25,32 +51,32 @@ var Tree = {
       this._traverse(tree, node.next, fn);
   },
 
-  get: function(tree, id) {
+  get(tree, id) {
     return tree.nodes[id];
   },
 
-  parent: function(tree, id) {
+  parent(tree, id) {
     var node = this.get(tree, id);
     var parentId = node.parent;
     var parent = parentId === null ? null : this.get(tree, parentId);
     return parent;
   },
 
-  child: function(tree, id) {
+  child(tree, id) {
     var node = this.get(tree, id);
     var childId = node.child;
     var child = (childId === null) ? null : this.get(tree, childId);
     return child;
   },
 
-  next: function(tree, id) {
+  next(tree, id) {
     var node = this.get(tree, id);
     var nextId = node.next;
     var next = (nextId === null) ? null : this.get(tree, nextId);
     return next;
   },
 
-  previous: function(tree, id) {
+  previous(tree, id) {
     var node = this.get(tree, id);
     var previousId = node.previous;
     var previous = (previousId === null) ? null : this.get(tree, previousId);
@@ -58,7 +84,7 @@ var Tree = {
   },
 
   // TODO: was hasChild
-  hasChildDescendant: function(tree, parentId, childId) {
+  hasChildDescendant(tree, parentId, childId) {
     var that = this;
     var node = this.get(tree, childId);
     var out = false;
@@ -74,7 +100,7 @@ var Tree = {
     return out;
   },
 
-  getTemplate: function(tree) {
+  getTemplate(tree) {
     var newId = String(tree.nextId++);
     return {
       "id": newId,
@@ -98,7 +124,7 @@ var Tree = {
 
     var _clone = function(node) {
       var newId = String(tree.nextId++);
-      var clone = _.cloneDeep(node);
+      var clone = { ...node };
 
       clone.id = newId;
       clone.name = clone.name + "_copy";
@@ -231,5 +257,11 @@ var Tree = {
     }
 
     return tree;
-  }
+  },
+
+  _isNil(value) {
+    return value === null || value === undefined;
+  },
 };
+
+if (module.exports) module.exports = Tree;
