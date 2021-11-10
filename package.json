@@ -1,9 +1,30 @@
 {
+  "name": "javascript-tree",
+  "description": "An implementation of a doubly-linked list ordered tree structure in JavaScript.",
+  "version": "1.0.0",
+  "main": "tree.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "http-server"
   },
   "devDependencies": {
     "http-server": "^14.0.0",
     "jest": "^27.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buwilliams/javascript-tree.git"
+  },
+  "keywords": [
+    "javascript",
+    "tree",
+    "order",
+    "ordered"
+  ],
+  "author": "Buddy Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buwilliams/javascript-tree/issues"
+  },
+  "homepage": "https://github.com/buwilliams/javascript-tree#readme"
 }
